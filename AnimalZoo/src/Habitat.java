@@ -1,7 +1,7 @@
 public enum Habitat {
     SAVANNAH(85),
     ARTIC(-20),
-    Forest(60);
+    FOREST(60);
 
     private int m_temp;
 

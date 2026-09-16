@@ -1,8 +1,8 @@
 public abstract class Animal {
 
-    private String m_name;
-    private int m_age;
-    private Habitat m_habitat;
+    protected String m_name;
+    protected int m_age;
+    protected Habitat m_habitat;
 
     public Animal(String name, int age, Habitat habitat) {
         m_name = name;
@@ -14,5 +14,7 @@ public abstract class Animal {
         return m_name;
     }
 
-    
+    public abstract String toString();
+
+    public abstract void makeSound();
 }

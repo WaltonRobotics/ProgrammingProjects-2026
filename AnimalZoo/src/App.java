@@ -4,17 +4,17 @@ public class App {
         Penguin penguin = new Penguin("Bob", 2);
         BlackBear blackBear = new BlackBear("Boby", 4);
 
-        lion.toString();
+        System.out.println(lion.toString());
         lion.makeSound();
         lion.hunt();
         lion.performTrick();
 
-        penguin.toString();
+        System.out.println(penguin.toString());
         penguin.makeSound();
         penguin.slide();
         penguin.swim();
 
-        blackBear.toString();
+        System.out.println(blackBear.toString());
         blackBear.makeSound();
         blackBear.forage();
         blackBear.climbTree();

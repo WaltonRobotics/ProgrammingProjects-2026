@@ -8,4 +8,8 @@ public enum Habitat {
     private Habitat(int tempature) {
         m_temp = tempature;
     }
+
+    public int getTemp() {
+        return m_temp;
+    }
 }

@@ -8,7 +8,7 @@ public class Lion extends Animal implements Trainable {
 
     @Override
     public String toString() {
-        return (m_name + " the lion lives in the " + m_habitat + " and " + m_name + " is " + m_age + " years old");
+        return (m_name + " the lion lives in the " + m_habitat + " where it is " + m_habitat.getTemp() + " degrees fahrenheit and " + m_name + " is " + m_age + " years old");
     }
 
     @Override

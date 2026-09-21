@@ -8,7 +8,14 @@ public class App {
         //int[] m_lateFee = {5, 7, 1};
         //System.out.println(Problems.lateFee(m_lateFee));
 
-        Problems.fizzBuzz(15);
-        System.out.println(Problems.fizzBuzz(15));
+        //Problems.fizzBuzz(15);
+        //System.out.println(Problems.fizzBuzz(15));
+
+        int[] m_numbers = {7,1,5,4,3,4,6,0,9,5,8,2,};
+        int[] sneakyResults = Problems.getSneakyNumbers(m_numbers);
+        for (int printArray : sneakyResults) {
+            System.out.println(printArray);
+        }
+
     }
 }

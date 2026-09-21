@@ -118,8 +118,7 @@ public class Problems {
                 result.add("Buzz");
             }
             else {
-                String I = Integer.toString(i);
-                result.add(I);
+                result.add(Integer.toString(i));
             }}
         /*
         Things you'll need to know:
@@ -163,7 +162,19 @@ public class Problems {
      */
     public static int[] getSneakyNumbers(int[] nums) {
         int[] answer = new int[2];
-
+        ArrayList<Integer> answers = new ArrayList<>();
+        ArrayList<Integer> numbers = new ArrayList<>();
+        for(int number : nums) {
+            if(numbers.contains(number)) {
+                answers.add(number);
+            }
+            else {
+                numbers.add(number);
+            }
+        }
+        for(int i = 0; i < answers.size(); i++) {
+            answer[i] = answers.get(i);
+        }
         //Your code goes here
 
         return answer;

@@ -25,7 +25,10 @@ public class Problems {
         double[] answer = new double[2];
 
         //Your code goes here
-
+        double kelvinFromCelsius = celsius + 273.15;
+        double fahrenheitFromCelsius = celsius * 1.8 + 32;
+        answer[0] = kelvinFromCelsius;
+        answer[1] = fahrenheitFromCelsius;
         return answer;
     }
 
@@ -58,11 +61,28 @@ public class Problems {
     Thus, the total penalty is 1 + 1 = 2.
      */
     public static int lateFee(int[] daysLate) {
-        int answer = 0;
+        int Finalanswer = 0;
+
+        for(int i = 0; i < daysLate.length; i++) {
+            int answer;
+            if(daysLate[i] == 1) {
+                answer = 1;
+            }
+            else if(daysLate[i] <= 5) {
+                answer = 2 * daysLate[i];
+            }
+            else if(daysLate[i] > 5) {
+                answer = 3 * daysLate[i];
+            }
+            else {
+                answer = 0;
+            }
+            Finalanswer += answer;
+        }
 
         //Your code goes here
 
-        return answer;
+        return Finalanswer;
     }
 
     /*

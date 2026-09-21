@@ -5,7 +5,10 @@ public class App {
         //    System.out.println(printArray);
         //}
 
-        int[] m_lateFee = {5, 7, 1};
-        System.out.println(Problems.lateFee(m_lateFee));
+        //int[] m_lateFee = {5, 7, 1};
+        //System.out.println(Problems.lateFee(m_lateFee));
+
+        Problems.fizzBuzz(15);
+        System.out.println(Problems.fizzBuzz(15));
     }
 }

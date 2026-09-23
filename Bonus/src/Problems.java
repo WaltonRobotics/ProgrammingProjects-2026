@@ -203,7 +203,15 @@ public class Problems {
      */
     public static int countKeyChanges(String s) {
         int answer = 0;
-
+        s.charAt(0);
+        String lower = s.toUpperCase();
+        char letter = lower.charAt(0);
+        for(int i = 0; i < s.length(); i++) {
+            if(lower.charAt(i) != letter) {
+                letter = lower.charAt(i);
+                answer++;
+            }
+        }
         /*
         Things you'll need to know:
         To make a new string lowercase or uppercase. Pick one.

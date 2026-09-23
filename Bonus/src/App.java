@@ -17,7 +17,10 @@ public class App {
         //    System.out.println(printArray);
         //}
 
-        System.out.println(Problems.countKeyChanges("aAbBcC"));
+        //System.out.println(Problems.countKeyChanges("aAbBcC"));
+
+        int[] numbers = {9,6,4,2,3,5,7,0,1};
+        System.out.println(Problems.missingNumber(numbers));
 
     }
 }

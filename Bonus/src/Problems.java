@@ -252,7 +252,25 @@ public class Problems {
      */
     public static int missingNumber(int[] nums) {
         int answer = 0;
-
+        int maxNumber = 2;
+        for(int i = 0; i < nums.length; i++) {
+            maxNumber = nums[0];
+            if(maxNumber < nums[i]) {
+                maxNumber = nums[i];
+            }
+        }
+        int checker = 0;
+        for(int i = 1; i <= nums.length; i++) {
+            if(checker == nums.length) {
+                answer = i - 1;
+            }
+            checker = 0;
+            for(int j = 0; j < nums.length; j++) {
+                if(nums[j] != i) {
+                    checker++;
+                }
+            }
+        }
         //Your code goes here
 
         return answer;

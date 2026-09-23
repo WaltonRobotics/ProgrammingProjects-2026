@@ -19,8 +19,15 @@ public class App {
 
         //System.out.println(Problems.countKeyChanges("aAbBcC"));
 
-        int[] numbers = {9,6,4,2,3,5,7,0,1};
-        System.out.println(Problems.missingNumber(numbers));
+        //int[] numbers = {9,6,4,2,3,5,7,0,1};
+        //System.out.println(Problems.missingNumber(numbers));
+
+        int[] order = {1,4,5,3,2};
+        int[] friends = {2,5};
+        int[] recoverOrderresults = Problems.recoverOrder(order, friends);
+        for(int printArray : recoverOrderresults) {
+            System.out.println(printArray);
+        }
 
     }
 }

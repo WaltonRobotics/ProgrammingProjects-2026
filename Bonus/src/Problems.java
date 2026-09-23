@@ -299,6 +299,13 @@ public class Problems {
     public static int[] recoverOrder(int[] order, int[] friends) {
         int[] answer = new int[friends.length];
 
+        for(int i = 0; i < order.length; i++) {
+            for(int j = 0; j < friends.length; j++) {
+                if(friends[j] == order[i]) {
+                    answer[j] = order[i];
+                }
+            }
+        }
         //Your code goes here
 
         return answer;

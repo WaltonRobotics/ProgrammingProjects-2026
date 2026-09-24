@@ -1,3 +1,3 @@
 public interface Trainable {
-    public void performTrick();
+    public void performTrick(String trick);
 }

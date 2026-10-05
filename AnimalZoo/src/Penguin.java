@@ -1,15 +1,17 @@
 public class Penguin extends Animal {
-
+    public Penguin(String name, int age) {
+    super (name, age, Habitat.ARCTIC);
+    }
     @Override
-    public void makeSound(String sound) {
-        sound = "honk";
+    public String makeSound() {
+        return getName() + " lets out a loud honk!";
     }
 
-    public void swim() {
-
+    public String swim() {
+        return getName() + " swims across the ocean to find fish to eat.";
     }
 
-    public void slide() {
-
+   public String slide() {
+        return getName() + " slides across the ice on its belly.";
     }
 }

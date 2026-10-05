@@ -1,17 +1,22 @@
 public class BlackBear extends Animal {
+    public BlackBear(String name, int age) {
+        super (name, age, Habitat.FOREST);
+    }
 
     @Override
-    public void makeSound(String sound) {
+    public String makeSound() {
+        return getName() + " lets out a low growl.";
     }
 
-    public void forage() {
+    public String forage() {
+        return getName() + " searches the forest floor for berries.";
     }
 
-    public void climbTree() {
+    public String climbTree() {
+        return getName() + " climbs a tree with surprising speed.";
     }
 
-    public void hibernate() {
+    public String hibernate() {
+        return getName() + " hibernates for all of the winter months.";
     }
-
-    
 }

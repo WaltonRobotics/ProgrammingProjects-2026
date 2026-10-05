@@ -1,15 +1,25 @@
 public abstract class Animal {
-    private String m_name;
-    private int m_age;
-    private String m_habitat;
+    public String m_name;
+    public int m_age;
+    public Habitat m_habitat;
 
-    public void getName(String name) {
+    public Animal(String name, int age, Habitat habitat) {
         m_name = name;
+        m_age = age;
+        m_habitat = habitat;
     }
 
-    public void toString() {
-
+    public String getName() {
+        return m_name;
     }
 
-    public abstract void makeSound(String sound);
+    public int getHabitatTemp() {
+        return this.m_habitat.getTemp();
+    }
+
+    public String toString() {
+        return m_name + " (" + m_age + " years old) lives in the " + m_habitat + ", where it's usually " + getHabitatTemp() + " degrees F.";
+    }
+
+    public abstract String makeSound();
 }

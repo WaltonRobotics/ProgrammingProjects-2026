@@ -1,7 +1,7 @@
-public class Blakbear extends animal {
+public class BlackBear extends animal {
 
 
-    public Blakbear(String name, int age) {
+    public BlackBear(String name, int age) {
         super(name, age, Habitat.FOREST);
     }
 

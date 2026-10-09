@@ -3,7 +3,7 @@ public class AnimalZoo {
 
         Lion leo = new Lion("Leo", 5);
         Penguin pip = new Penguin("Pip", 3);
-        Blakbear baloo = new Blakbear("Baloo", 7);
+        BlackBear baloo = new BlackBear("Baloo", 7);
 
         // Lion :)
         System.out.println(leo);

@@ -1,3 +1,3 @@
-public interface Trainable{
-    public void performTrick();
+public interface Trainable {
+    void performTrick();
 }
